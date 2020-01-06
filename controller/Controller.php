@@ -22,6 +22,10 @@ class Controller {
             case 'login':
                 $this->showTelaLoginView();
                 break;
+case 'primeira':
+$this->showPrimeira();
+break;
+
             case 'asso':
                 $this->showAsso();
                 break;
@@ -38,7 +42,9 @@ class Controller {
         include " view/asso.php";
         
     }
-    
+
+private function showPrimeira(){
+include 'view/primeira.php';    
     private function showTelaLoginView(){
         include 'view/telaLoginView.php';
     }
